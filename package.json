@@ -1,0 +1,22 @@
+{
+  "name": "data-heroes",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "transliteration": "^2.3.5",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.0"
+  }
+}
