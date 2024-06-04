@@ -11,7 +11,7 @@
         <button type="submit">Apply</button>
       </form>
       <div v-if="loading" class="loading">Loading...</div>
-      <div v-else>
+      <div v-else class="character-block">
         <div v-if="characters.length > 0" class="character-grid">
           <div v-for="character in characters" :key="character.id">
             <CharacterCard :character="character" />
@@ -170,6 +170,11 @@
     display: flex;
     justify-content: center;
   }
+
+  .character-block {
+    display: flex;
+    flex-direction: column;
+  }
   
   .character-grid {
     display: flex;
@@ -181,6 +186,7 @@
   .pagination {
     margin-top: 20px;
     text-align: center;
+    width: 100%;
   }
 
   .no-found, .loading{
